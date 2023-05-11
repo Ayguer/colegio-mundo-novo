@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --cor1:rgba(255, 255, 0, 0.772);
+    --cor2:rgba(255, 0, 0, 0.533);
+}
+
+
+header{
+    background-image: url('../imagens/estudando.jpg.webp');
+    background-color: black;
+    height: 86vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 2s;
+    
+}
+div.logotipo{
+    position: relative;
+    width: 40%;
+    
+    background-color:var(--cor1) ;
+    top: 15%;
+    left: 5%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.533);
+    font-size: 1.1em;
+
+}
+@media only screen and (max-width:800px) {
+    
+    div.logotipo{
+        position: relative;
+        width: 300px;
+        
+        background-color:var(--cor1) ;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.533);
+        font-size: 1.1em;
+    
+    }
+    div.frases{
+        visibility: hidden;
+        position: absolute;
+        background-color:var(--cor1) ;
+        border: 2px solid var(--cor2);
+        border-right: none;
+        top: 1%;
+        right: 0%;
+        border-radius: 20px 0px 0px 20px;
+        padding: 5px;
+        display: none!important;
+        font-size: 1.1em;
+        box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.533);
+        transition: 2s;
+       
+        animation-duration: 2s;
+        width: 900px;
+        height: 50px;
+        animation-fill-mode: forwards;
+        
+    }
+    
+}
+div.logotipo>img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+div.logotipo>h1{
+    color:var(--cor2) ;
+    
+}
+div.logotipo>p{
+    margin-top: 30px;
+}
+div.frases>img{
+    height: 50px;
+    
+    
+}
+div.frases{
+    visibility: hidden;
+    position: absolute;
+    background-color:var(--cor1) ;
+    border: 2px solid var(--cor2);
+    border-right: none;
+    top: 1%;
+    right: 0%;
+    border-radius: 20px 0px 0px 20px;
+    padding: 5px;
+    display: flex;
+    font-size: 1.1em;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.533);
+    transition: 2s;
+   
+    animation-duration: 2s;
+    width: 900px;
+    height: 50px;
+    animation-fill-mode: forwards;
+    
+}
+
+
+@keyframes abrir {
+    from{
+        width: 0;  
+    }
+    to{
+        width: 900px;
+    }
+    
+}
+@keyframes abrir-frase{
+    from{
+        opacity: 0;
+        visibility: visible;
+    }
+    to{
+        opacity: 100%;
+        visibility: visible;
+        
+    }
+
+   
+}
+@keyframes fechar-frase{
+    from{
+        opacity: 100%;
+        visibility: visible;
+    }
+    to{
+        opacity: 0%;
+        visibility: hidden;
+        
+    }
+}
+@keyframes fechar{
+    to {
+        width: 0;
+    }
+}
