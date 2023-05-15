@@ -73,7 +73,7 @@ ul>li>ul>li{
     transform: translateY(-100px);
     transition-delay: calc(0.1s * var(--R));
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.448);
-    
+    text-transform: uppercase;
     z-index: 2;
 }
 ul>li>ul>li:hover{
