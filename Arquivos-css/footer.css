@@ -1,0 +1,18 @@
+:root{
+    --cor1:rgba(255, 255, 0, 0.772);
+    --cor2:rgba(255, 0, 0, 0.533);
+    --cor3:rgb(43, 46, 248);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+footer{
+    background-color: var(--cor1);
+    height: 300px;
+    width: 100%;
+    box-shadow:inset 5px 1000px rgba(0, 0, 0, 0.589);
+    
+}
