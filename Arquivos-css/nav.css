@@ -16,20 +16,20 @@ nav{
     
     
 }
-nav ul{
+nav>ul{
     list-style: none;
     
     
     
 }
-nav ul li {
+nav>ul>li {
     border-left: 2px solid black;
     display: inline-block;
     padding: 20px;
     transition: 0.5s;
     
 }
-nav ul li a{
+nav>ul>li>a{
     text-decoration: none;
     color: var(--cor2);
     text-transform: uppercase;
@@ -37,17 +37,60 @@ nav ul li a{
     transition: 0.5s;
    
 }
-nav ul li.fim{
+nav>ul>li.fim{
     border-right: 2px solid black;
 }
-nav ul li:hover{
+nav>ul>li:hover{
     background-color: var(--cor1);
     border: none;
 
     
 }
-nav ul li:hover a{
+nav>ul>li:hover a{
     color: var(--cor3);
+}
+ul>li>ul{
+    position: absolute;
+    margin-top: 20px;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    text-align: left;
+    transition: 0.5s;
+    list-style: none;
+    z-index: 2;
+    
+}
+ul>li>ul>li{
+    list-style: none;
+    background-color: var(--cor1);
+    color: var(--cor3);
+    margin-left: -20px;
+    padding: 20px;
+    border-bottom:2px solid black;
+    font-weight: bolder;
+    transition: 0.5s;
+    transform: translateY(-100px);
+    transition-delay: calc(0.1s * var(--R));
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.448);
+    
+    z-index: 2;
+}
+ul>li>ul>li:hover{
+    background-color: var(--cor3);
+    color: var(--cor2);
+    margin-bottom: 5px;
+}
+ul>li:hover>ul>li{
+    transform: translateY(0px);
+}
+ul>li:hover>ul{
+
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    
+    
 }
 @keyframes texte {
     from{

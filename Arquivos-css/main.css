@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --cor1:rgba(255, 255, 0, 0.772);
+    --cor2:rgba(255, 0, 0, 0.533);
+    --cor3:rgb(43, 46, 248);
+}
+.imageCover{
+    box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.622);
+    background-color: aqua;
+    color:var(--cor2) ;
+    height: 400px;
+    width: 100%;
+    margin-top: 30px;
+    line-height: 3em;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+    margin-bottom: 30px;
+    transition: 1s;
+    transform: translateX(-100%);
+    animation-name: abrir;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.imageCover>.image{
+    box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.622);
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    background-image: url('../imagens/estudando3.avif');
+    background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+}
+@keyframes abrir {
+    to{
+        transform: translateX(0%);
+        
+        
+    }
+}
+@media only screen and (max-width:800px) {
+    .imageCover{
+        font-size: 1.5em;
+    }
+    
+}
