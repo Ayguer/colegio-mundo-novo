@@ -5,8 +5,7 @@ function escrever( a, b, c){
     const caracteres= b.split("").reverse()
     const intervalo= setInterval(() => {
         if (!caracteres.length) {
-            return clearInterval(intervalo)
-            
+            return clearInterval(intervalo) 
         }
         const proximo = caracteres.pop()
         paragrafo.innerHTML+= proximo
