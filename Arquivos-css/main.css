@@ -49,5 +49,41 @@
     .imageCover{
         font-size: 1.5em;
     }
+    div.iframe{
+        
+        height: 300px;
+        
+        
     
+    }
+    iframe{
+        width: 5%;
+        height: 5%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        
+       
+    }
+    
+}
+div.iframe{
+    position: relative;
+    background-color: blue;
+    margin-bottom: 30px;
+    height: 400px;
+    width: 100%;
+    
+
+}
+iframe{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    
+    
+   
 }

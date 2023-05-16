@@ -11,8 +11,11 @@
 }
 nav{
     background-color: var(--cor3);
-    
+    position: sticky;
     text-align: center;
+    top: 0;
+    z-index: 2;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.511);
     
     
 }
@@ -31,7 +34,7 @@ nav>ul>li {
 }
 nav>ul>li>a{
     text-decoration: none;
-    color: var(--cor2);
+    color: rgba(255, 255, 255, 0.621);
     text-transform: uppercase;
     font-weight: bold;
     transition: 0.5s;
@@ -70,7 +73,7 @@ ul>li>ul>li{
     border-bottom:2px solid black;
     font-weight: bolder;
     transition: 0.5s;
-    transform: translateY(-100px);
+    transform: translatex(-500px);
     transition-delay: calc(0.1s * var(--R));
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.448);
     text-transform: uppercase;
@@ -78,11 +81,11 @@ ul>li>ul>li{
 }
 ul>li>ul>li:hover{
     background-color: var(--cor3);
-    color: var(--cor2);
+    color:rgba(255, 255, 255, 0.621) ;
     margin-bottom: 5px;
 }
 ul>li:hover>ul>li{
-    transform: translateY(0px);
+    transform: translatex(0px);
 }
 ul>li:hover>ul{
 

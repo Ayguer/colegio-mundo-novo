@@ -7,6 +7,7 @@
 :root{
     --cor1:rgba(255, 255, 0, 0.772);
     --cor2:rgba(255, 0, 0, 0.533);
+    --cor3:rgb(43, 46, 248);
 }
 
 
@@ -51,9 +52,9 @@ div.logotipo{
         width: 300px;
         
         background-color:var(--cor1) ;
-        top: 50%;
+        top: 20%;
         transform: translate(-50%,-50%);
-        left: 50%;
+        left: 20%;
         padding: 10px;
         text-align: center;
         border-radius: 5px;
@@ -61,27 +62,10 @@ div.logotipo{
         font-size: 1.1em;
     
     }
-    div.frases{
-        visibility: hidden;
-        position: absolute;
-        background-color:var(--cor1) ;
-        border: 2px solid var(--cor2);
-        border-right: none;
-        top: 1%;
-        right: 0%;
-        border-radius: 20px 0px 0px 20px;
-        padding: 5px;
-        display: none!important;
-        font-size: 1.1em;
-        box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.533);
-        transition: 2s;
-       
-        animation-duration: 2s;
-        width: 900px;
-        height: 50px;
-        animation-fill-mode: forwards;
-        
+    div.texto{
+        display: none;
     }
+    
     
 }
 div.logotipo>img{
@@ -102,6 +86,54 @@ div.frases>img{
     
 }
 
+div.texto{
+    transition: .5s;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    
+    padding: 20px;
+    border-radius: 20px;
+    
+  
+    
+    width: 500px;
+    height: 500px;
+    transform: translateX(-150%);
+    animation-name: abrir;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+div.texto>p
+{
+    font-size: 2em;
+    color:var(--cor3) ;
+    text-shadow: 1px 2px 20px rgb(255, 0, 0);
+    transition: 1s;
+    text-align: right;
+    
+
+}
+div.texto>p::after{
+    content: '|';
+    
+    margin-left: 10px;
+    color: rgb(108, 108, 108);
+    font-size: 1em;
+    font-weight: bold;
+    
+    animation: pisc .7s infinite linear;
+    transition: 2s linear;
+
+}
+@keyframes pisc {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
 
 
 
