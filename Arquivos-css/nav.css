@@ -95,6 +95,9 @@ ul>li>ul>li:hover{
     margin-top: 5px;
     letter-spacing: .1em;
 }
+ul>li>ul>li:hover>a{
+
+}
 ul>li>ul>li>a:hover{
     
 }
