@@ -20,6 +20,7 @@ header{
     background-attachment: fixed;
     background-position: center center;
     transition: 2s;
+    position: relative;
     
 }
 div.logotipo{
@@ -45,29 +46,7 @@ div.logotipo{
         transform: translateX(0%);
     }
 }
-@media only screen and (max-width:800px) {
-    
-    div.logotipo{
-        position: relative;
-        width: 300px;
-        
-        background-color:var(--cor1) ;
-        top: 20%;
-        transform: translate(-50%,-50%);
-        left: 20%;
-        padding: 10px;
-        text-align: center;
-        border-radius: 5px;
-        box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.533);
-        font-size: 1.1em;
-    
-    }
-    div.texto{
-        display: none;
-    }
-    
-    
-}
+
 div.logotipo>img{
     width: 100%;
     margin-bottom: 5px;

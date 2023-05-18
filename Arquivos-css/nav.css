@@ -39,6 +39,7 @@ nav>ul>li>a{
     font-weight: bold;
     transition: 0.5s;
    
+   
 }
 nav>ul>li.fim{
     border-right: 2px solid black;
@@ -46,11 +47,13 @@ nav>ul>li.fim{
 nav>ul>li:hover{
     background-color: var(--cor1);
     border: none;
+    
 
     
 }
-nav>ul>li:hover a{
+nav>ul>li:hover> a{
     color: var(--cor3);
+    letter-spacing: 0.3em;
 }
 ul>li>ul{
     position: absolute;
@@ -79,12 +82,21 @@ ul>li>ul>li{
     text-transform: uppercase;
     z-index: 2;
     
+    
+}
+ul>li>ul>li>a{
+    color: var(--cor3);
+    text-decoration: none;
 }
 ul>li>ul>li:hover{
     background-color: rgba(79, 79, 249, 0.697);
     color:rgb(255, 255, 255) ;
     margin-bottom: 5px;
     margin-top: 5px;
+    letter-spacing: .1em;
+}
+ul>li>ul>li>a:hover{
+    
 }
 ul>li:hover>ul>li{
     transform: translatex(0px);
