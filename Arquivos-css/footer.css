@@ -1,6 +1,6 @@
 :root{
     --cor1:rgba(255, 255, 0, 0.772);
-    --cor2:rgba(255, 0, 0, 0.533);
+    --cor2:rgb(255, 0, 0);
     --cor3:rgb(43, 46, 248);
 }
 *{
@@ -11,8 +11,23 @@
 }
 footer{
     background-color: var(--cor1);
-    height: 300px;
+    height: 150px;
     width: 100%;
     box-shadow:inset 5px 1000px rgba(0, 0, 0, 0.589);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+}
+footer>ul{
+    column-count: 3;
+    list-style: none;
+}
+footer>ul>li>strong{
+    text-transform: uppercase;
+}
+footer>ul>li{
+    font-size: 1.2em;
+    margin-left: 30px;
+    color:aliceblue;
 }

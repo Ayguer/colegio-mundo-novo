@@ -6,15 +6,16 @@
 }
 :root{
     --cor1:rgba(255, 255, 0, 0.772);
-    --cor2:rgba(255, 0, 0, 0.533);
+    --cor2:rgb(255, 0, 0);
     --cor3:rgb(43, 46, 248);
 }
-
-
+body{
+    background-color: rgb(255, 255, 255);
+}
 header{
     background-image: url('../imagens/estudando.jpg.webp');
     background-color: black;
-    height: 86vh;
+    height: 70vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -22,12 +23,14 @@ header{
     transition: 2s;
     position: relative;
     padding-top: 50px;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.476);
     
 }
 div.logotipo{
     margin: 20px 0px 0px 20px;
     background-color:var(--cor1) ;
     padding: 10px;
+    width:35% ;
     text-align: center;
     border-radius: 5px;
     box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.533);
@@ -50,35 +53,23 @@ div.logotipo>img{
 }
 div.logotipo>h1{
     color:var(--cor2) ;
-    
 }
 div.logotipo>p{
     margin-top: 30px;
 }
 div.frases>img{
-   height: 50px;
-   
-    
-    
+   height: 50px; 
 }
-
 div.texto{
     transition: .5s;
     position: absolute;
-    left: 45%;
-    top: 20%;
-    
+    left: 100%;
+    top: 3%;
     padding: 20px;
     border-radius: 20px;
-    
-  
-    
-    width: 500px;
+    width: 50%;
     height: 500px;
-    transform: translateX(-150%);
-    animation-name: abrir;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    transform: translateX(-100%);
 }
 div.texto>p
 {
@@ -87,20 +78,15 @@ div.texto>p
     text-shadow: 1px 2px 20px rgb(255, 0, 0);
     transition: 1s;
     text-align: right;
-    
-
 }
 div.texto>p::after{
     content: '|';
-    
     margin-left: 10px;
     color: rgb(108, 108, 108);
     font-size: 1em;
     font-weight: bold;
-    
     animation: pisc .7s infinite linear;
     transition: 2s linear;
-
 }
 @keyframes pisc {
     from{
@@ -109,10 +95,4 @@ div.texto>p::after{
     to{
         opacity: 0;
     }
-}
-
-
-
-
-    
-    
+}        

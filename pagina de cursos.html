@@ -7,8 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="Arquivos-css/header.css">
     <link rel="stylesheet" href="Arquivos-css/nav.css">
-    <link rel="stylesheet" href="Aquivos-css/main.css">
+    <link rel="stylesheet" href="Arquivos-css/main.css">
     <link rel="stylesheet" href="Arquivos-css/media-screnn.css">
+    <link rel="stylesheet" href="Arquivos-css/footer.css">
 </head>
 <body>
     <nav>
@@ -16,22 +17,45 @@
         <ul>
             <li>
                 <a href="pagina-inicial.html">pagina inicial</a>
+                <ul>
+                    <li><a href="pagina-inicial.html#introduçao"> introducao</a></li>
+                </ul>
             </li>
             <li>
-                <a href="#">cursos</a>
+                <a href="pagina de cursos.html">cursos</a>
                 <ul>
-                    <li style="--R:0;">ciencias fidicas e biologicas</li>
-                    <li style="--R:1;">ciecias economicas e juridicas</li>
-                    <li style="--R:2;">tecnico desenhador e projectista </li>
-                    <li style="--R:3;">tecnico de finanças</li>
-                    <li style="--R:4;">tecnico de informatica</li>
-                    <li style="--R:5;">tecnico de gestao de recursos humanos</li>
+                    <li style="--R:0;"><a href="#um">ciencias fisicas e biologicas</a></li>
+                    <li style="--R:1;"><a href="#dois">ciecias economicas e juridicas</a></li>
+                    <li style="--R:2;"><a href="#tres">tecnico desenhador e projectista</a> </li>
+                    <li style="--R:3;"><a href="#quatro">tecnico de finanças</a></li>
+                    <li style="--R:4;"><a href="#cinco">tecnico de informatica</a></li>
+                    <li style="--R:5;"><a href="#seis">tecnico de gestao de recursos humanos</a></li>
                 </ul>
             </li>
             <li class="fim">
-                <a  href="#">vendas</a>
+                <a  href="#">Matricula</a>
                 <ul>
-                    
+                    <li style="--R:0;">
+                        <a href="">propinas</a>
+                    </li>
+                    <li style="--R:1;">
+                        <a href="">curso medio tecnico proficional</a>
+                    </li>
+                    <li style="--R:2;">
+                        <a href="">transpote escolar </a>
+                    </li>
+                    <li style="--R:3;">
+                        <a href=""> formas de pagamento</a>
+                    </li>
+                    <li style="--R:4;">
+                        <a href="">documentos necessarios</a>
+                    </li>
+                    <li style="--R:5;">
+                        <a href="">uniforme</a>
+                    </li>
+                    <li style="--R:6;">
+                        <a href="">atl (actividades em tempo livre)</a>
+                    </li>
                 </ul>
             </li>
         </ul>
@@ -50,6 +74,43 @@
         </div>
 
     </header>
+    <main>
+        <div class="cursos">
+            <ul class="class-ul">
+                <li>
+                    <div class="img um" id="um"></div>
+                    <a href="#">ciencias fisicas e biologicas</a>
+                </li>
+                <li>
+                    <div class="img dois" id="dois"></div>
+                    <a href="#">ciecias economicas e juridicas</a>
+                </li>
+                <li>
+                    <div class="img tres" id="tres"></div>
+                    <a href="#">tecnico desenhador e projectista</a>
+                </li>
+                <li>
+                    <div class="img quatro" id="quatro"></div>
+                    <a href="#">tecnico de finanças</a>
+                </li>
+                <li>
+                    <div class="img cinco" id="cinco"></div>
+                    <a href="#">tecnico de informatica</a>
+                </li>
+                <li>
+                    <div class="img seis" id="seis"></div>
+                    <a href="#">tecnico de gestao de recursos humanos</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li > <strong>localizaçao:</strong> <span> Rua Direita do Camama N 72</span></li>
+            <li><strong>tel:</strong><span> 222-403-771 / 928-040-101</span></li>
+            <li><strong>e-mail:</strong><span> colegiomundonovo@MY.com</span></li>
+        </ul>
+    </footer>
     <script src="arquivos-js/texto.js"></script>
 </body>
 </html>

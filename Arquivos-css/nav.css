@@ -6,7 +6,7 @@
 }
 :root{
     --cor1:rgba(255, 255, 0, 0.772);
-    --cor2:rgba(255, 0, 0, 0.533);
+    --cor2:rgb(255, 0, 0);
     --cor3:rgb(43, 46, 248);
 }
 nav{
@@ -87,6 +87,7 @@ ul>li>ul>li{
 ul>li>ul>li>a{
     color: var(--cor3);
     text-decoration: none;
+    transition: .5s;
 }
 ul>li>ul>li:hover{
     background-color: rgba(79, 79, 249, 0.697);
@@ -96,7 +97,8 @@ ul>li>ul>li:hover{
     letter-spacing: .1em;
 }
 ul>li>ul>li:hover>a{
-
+    color:rgb(255, 255, 255) 
+    
 }
 ul>li>ul>li>a:hover{
     
