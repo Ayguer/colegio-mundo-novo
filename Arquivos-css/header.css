@@ -10,7 +10,12 @@
     --cor3:rgb(43, 46, 248);
 }
 body{
-    background-color: rgb(255, 255, 255);
+    background-color:   rgba(255, 255, 0, 0.505);
+    background-image: url('../imagens/fundo-cursos.png');
+    background-position: center center;
+    background-size:60px 60px ;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 header{
     background-image: url('../imagens/estudando.jpg.webp');

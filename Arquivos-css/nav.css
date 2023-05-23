@@ -69,7 +69,7 @@ ul>li>ul{
 }
 ul>li>ul>li{
     list-style: none;
-    background-color: rgba(225, 225, 0, 0.394);
+    background-color: rgba(201, 201, 98, 0.679);
     color: var(--cor3);
     margin-left: -20px;
     padding: 20px;
