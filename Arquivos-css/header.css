@@ -61,6 +61,8 @@ div.frases>img{
    height: 50px; 
 }
 div.texto{
+   
+    
     transition: .5s;
     position: absolute;
     left: 100%;
@@ -68,7 +70,7 @@ div.texto{
     padding: 20px;
     border-radius: 20px;
     width: 50%;
-    height: 500px;
+    height: 400px;
     transform: translateX(-100%);
 }
 div.texto>p

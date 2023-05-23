@@ -103,7 +103,6 @@ div.cursos>ul
 
 div.cursos>ul>li
 {
-    
     padding: 5px;
     background-color: var(--cor3);
     margin: 20px;
@@ -113,7 +112,6 @@ div.cursos>ul>li
     transition: 0.5s, box-shadow 1.5s ;
    position: relative;
     box-shadow: px 0px black;
-    
 }
 div.cursos>ul>li:hover
 {
@@ -213,3 +211,34 @@ div.img{
     background-image: url('../imagens/Recursos-Humanos.jpg');
 }
 /* pagina-matricula */
+table{
+    width: 800px;
+    margin: 20px;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: center;
+    transition: .5s;
+}
+tr{
+    margin: 0;
+}
+td{
+    background-color: rgba(255, 255, 0, 0.792);
+    margin: 0;
+    padding: 20px;
+    font-size: 1.1em;
+   
+}
+.im{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    color: var(--cor2);
+    background-color: rgba(0, 0, 255, 0.624)
+}
+.dm{
+    background-color:rgb(219, 219, 0) ;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+}

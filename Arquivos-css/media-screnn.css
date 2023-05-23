@@ -13,18 +13,29 @@
     ul>li>ul>li>a{
         font-size: .7em;
     }
+    table{
+        width: 340px;
+    }
+    .dm{
+        font-size: .8em;
+    }
+    td{
+        font-size: .8em;
+    }
+    .im{
+        font-size: 1em;
+    }
     div.logotipo{
+        
         
         width: 300px;
         margin:auto;
         background-color:var(--cor1) ;
-       
         padding: 10px;
         text-align: center;
         border-radius: 5px;
         box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.533);
         font-size: 1.1em;
-    
     }
     div.texto{
         display: none;
